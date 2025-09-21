@@ -1,0 +1,156 @@
+/* Global reset & dark theme */
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  color: #58a6ff;
+  margin-bottom: 10px;
+}
+
+header p.muted {
+  text-align: center;
+  color: #8b949e;
+  margin-bottom: 30px;
+}
+
+/* Container box */
+#app-container {
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Card container for each section */
+.card {
+  background: #1b222b;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px; /* space between cards */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Section headings */
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #58a6ff;
+}
+
+/* Row layout */
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px; /* spacing between rows */
+}
+
+.row.buttons {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Labels */
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* Inputs & textareas */
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: #161b22;
+  color: #e6edf3;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* File input */
+input[type="file"] {
+  margin: 12px 0;
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 8px;
+  border-radius: 6px;
+  color: #e6edf3;
+}
+
+/* Buttons */
+button {
+  background: #238636;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #2ea043;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #30363d;
+  cursor: not-allowed;
+}
+
+/* Horizontal rule (if used) */
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #30363d;
+}
+
+/* Output box */
+pre#output {
+  margin-top: 15px;
+  background: #0d1117;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #8b949e;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .row.buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  button {
+    width: 100%;
+    margin: 0;
+  }
+}
