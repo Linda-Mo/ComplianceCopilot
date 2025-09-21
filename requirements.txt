@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+aiohttp
+httpx
+pyjwt
+aiofiles
+# optional but required for Coral/MCP integration:
+langchain
+langchain-mcp-adapters
